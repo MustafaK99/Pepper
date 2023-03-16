@@ -12,7 +12,7 @@
   <img src="{{ url_for('static', filename='page.png') }}" class="icon" />
   <h3>generate README</h3>
   <form action="/" method="post">
-    <input type="text" name="animal" placeholder="Enter repo url" required />
+    <input type="text" name="code" placeholder="Enter code here" required />
     <input type="submit" value="Generate README" />
   </form>
   {% if result %}
