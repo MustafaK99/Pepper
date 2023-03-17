@@ -16,6 +16,6 @@
     <input type="submit" value="Generate README" />
   </form>
   {% if result %}
-  <div class="result">{{ result }}</div>
+  <div class="result">{% filter markdown %} {{result}} {% endfilter %}</div>
   {% endif %}
 </body>
